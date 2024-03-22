@@ -138,7 +138,7 @@ class PagesController {
         try{
             const {chapterId} = req.params
             const chapter = await Chapter.findById(chapterId)
-            const pages = await Page.find({chapter: chapterId})
+            const pages = await Page.find({chapter: chapterId}).populate('chapter')
             return res.json({
                 success: true,
                 data: {
