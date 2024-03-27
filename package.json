@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/",
-    "dev": "node --watch src/index.ts",
+    "dev": "nodemon src/index.ts",
     "tsc": "tsc -w",
     "tsc:build": "tsc"
   },
