@@ -9,7 +9,7 @@ export interface IComment extends Document{
 const commentSchema = new Schema({
     username: {
         type: String,
-        unique: false
+        unique: true
     },
     text: {
         type: String,
